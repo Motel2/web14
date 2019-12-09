@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			li{
+				float: left;
+				list-style: none;
+				width: 20%;
+				text-align: center;
+			}
+			a{
+				text-decoration: none;
+				color: black;
+			}
+			li div{
+				width: 40px;
+				margin: 10px auto;
+				border-top: solid 1px black;
+			}
+			li:nth-child(n+2) div{
+				width: 0px;
+				transition: all 1s;
+			}
+			li:nth-child(n+2):hover div{
+				width: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+				<a href="#">首页</a>
+				<div class="line"></div>
+			</li>
+			<li>
+				<a href="#">首页</a>
+				<div class="line"></div>
+			</li>
+			<li>
+				<a href="#">首页</a>
+				<div class="line"></div>
+			</li>
+			<li>
+				<a href="#">首页</a>
+				<div class="line"></div>
+			</li>
+			<li>
+				<a href="#">首页</a>
+				<div class="line"></div>
+			</li>
+		</ul>
+	</body>
+</html>
